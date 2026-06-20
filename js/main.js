@@ -1,4 +1,14 @@
-Crispy falafel wrapped in warm pita with tahini, salad, and pickles. A handheld Middle Eastern delight!",
+const recipes = [
+  {
+    id: 43,
+    title: "Falafel Wrap",
+    category: "middle-eastern",
+    origin: "🇱🇧 Lebanon",
+    time: "25 min",
+    difficulty: 1,
+    calories: "320 kcal",
+    image: "https://images.unsplash.com/photo-1547058881-aa0edd92aab3?w=600",
+    description: "Crispy falafel wrapped in warm pita with tahini, salad, and pickles. A handheld Middle Eastern delight!",
     ingredients: ["4 pita breads, warmed", "8 falafel balls (homemade or store-bought)", "1/2 cup hummus", "1/4 cup tahini sauce", "1 tomato, diced", "1 cucumber, diced", "1/4 cup pickled turnips", "1/4 cup pickled cucumbers", "Fresh lettuce, shredded", "Fresh parsley, chopped", "Hot sauce (optional)"],
     steps: ["Warm pita breads in a dry pan or oven for 1-2 minutes.", "Spread hummus generously on one side of each pita.", "Place 2 falafel balls in the center of each pita. Gently flatten them.", "Top with diced tomatoes, cucumbers, pickled vegetables, and lettuce.", "Drizzle with tahini sauce and hot sauce if desired.", "Sprinkle with fresh parsley.", "Fold the bottom of the pita up, then roll tightly from one side.", "Wrap in foil or parchment paper for easy eating. Serve immediately."]
   },
