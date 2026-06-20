@@ -1370,8 +1370,9 @@ body::before {
   }
 
   .modal-content {
-    margin: 1rem;
+    margin: 0.5rem;
     max-height: 95vh;
+    border-radius: var(--radius-md);
   }
 
   .modal-body {
@@ -1397,6 +1398,70 @@ body::before {
 
   .feedback-section {
     padding: 2rem 1.5rem;
+  }
+
+  /* ===== MODAL MOBILE FIXES ===== */
+  .modal-overlay {
+    padding: 0.5rem;
+    align-items: flex-start;
+    padding-top: 2rem;
+  }
+
+  .modal-image {
+    height: 200px;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+  }
+
+  .modal-meta {
+    gap: 0.5rem;
+  }
+
+  .modal-meta-item {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .modal-section-title {
+    font-size: 1.1rem;
+  }
+
+  .modal-close {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  /* ===== STEPS LIST MOBILE FIX ===== */
+  .steps-list li {
+    padding: 1rem 0 1rem 3rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .steps-list li::before {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+    top: 1rem;
+  }
+
+  /* ===== INGREDIENTS LIST MOBILE FIX ===== */
+  .ingredients-list li {
+    padding: 0.6rem 0.5rem;
+    font-size: 0.9rem;
+    padding-left: 0.8rem;
+  }
+
+  .ingredients-list li::before {
+    width: 22px;
+    height: 22px;
+    font-size: 0.7rem;
   }
 
   /* ===== FOOTER MOBILE FIXES ===== */
@@ -1525,6 +1590,17 @@ body::before {
     gap: 1rem;
   }
 
+  /* ===== ABOUT SECTION INLINE STYLE OVERRIDE ===== */
+  #about {
+    padding: 3rem 1.5rem !important;
+    margin: 2rem auto !important;
+  }
+
+  #about p[style*="font-size: 1.1rem"] {
+    font-size: 1rem !important;
+  }
+
+
   .category-card {
     padding: 1.5rem 1rem;
   }
@@ -1539,6 +1615,33 @@ body::before {
 
   .category-count {
     font-size: 0.8rem;
+  }
+
+  /* ===== RECIPE CARD MOBILE FIX ===== */
+  .recipe-image-container {
+    height: 180px;
+  }
+
+  .recipe-title {
+    font-size: 1.1rem;
+  }
+
+  .recipe-description {
+    font-size: 0.85rem;
+  }
+
+  .recipe-content {
+    padding: 1.2rem;
+  }
+
+  .recipe-category-badge {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.7rem;
+  }
+
+  .recipe-time-badge {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -1596,15 +1699,78 @@ body::before {
   }
 
   .recipe-image-container {
-    height: 180px;
+    height: 160px;
   }
 
   .recipe-title {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
   .recipe-description {
+    font-size: 0.8rem;
+  }
+
+  /* ===== MODAL EXTRA SMALL SCREEN FIXES ===== */
+  .modal-content {
+    margin: 0.25rem;
+    border-radius: 12px;
+  }
+
+  .modal-image {
+    height: 160px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .modal-body {
+    padding: 1rem;
+  }
+
+  .modal-title {
+    font-size: 1.3rem;
+  }
+
+  .modal-meta {
+    gap: 0.4rem;
+  }
+
+  .modal-meta-item {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  .modal-section-title {
+    font-size: 1rem;
+  }
+
+  .modal-close {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+
+  .steps-list li {
+    padding: 0.8rem 0 0.8rem 2.5rem;
     font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .steps-list li::before {
+    width: 26px;
+    height: 26px;
+    font-size: 0.75rem;
+    top: 0.8rem;
+  }
+
+  .ingredients-list li {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    padding-left: 0.6rem;
+  }
+
+  .ingredients-list li::before {
+    width: 20px;
+    height: 20px;
+    font-size: 0.65rem;
   }
 
   .modal-image {
@@ -1667,6 +1833,24 @@ body::before {
     padding: 0.8rem 1rem;
   }
 
+  /* ===== NAVBAR MOBILE FIXES ===== */
+  .navbar {
+    padding: 0.8rem 1rem !important;
+  }
+
+  .logo {
+    font-size: 1.2rem !important;
+  }
+
+  .logo span {
+    font-size: 1.4rem !important;
+  }
+
+  .mobile-menu-btn {
+    font-size: 1.3rem;
+  }
+
+
   .logo {
     font-size: 1.3rem;
   }
@@ -1714,6 +1898,32 @@ body::before {
     grid-template-columns: 1fr;
   }
 
+  /* ===== ABOUT SECTION INLINE STYLE OVERRIDE ===== */
+  #about {
+    padding: 2rem 1rem !important;
+    margin: 1rem auto !important;
+    border-radius: 20px !important;
+  }
+
+  #about div[style*="max-width: 800px"] {
+    max-width: 100% !important;
+  }
+
+  #about p[style*="font-size: 1.1rem"] {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  #about div[style*="gap: 2rem"] {
+    gap: 1rem !important;
+  }
+
+  #about div[style*="font-size: 2.5rem"] {
+    font-size: 2rem !important;
+  }
+
+
   /* ===== SCROLL TOP BUTTON SMALLER ===== */
   .scroll-top {
     width: 40px;
@@ -1721,6 +1931,42 @@ body::before {
     font-size: 1rem;
     bottom: 0.8rem;
     right: 0.8rem;
+  }
+
+  /* ===== SEARCH FILTER MOBILE FIX ===== */
+  .search-filter-container {
+    padding: 1rem;
+  }
+
+  .search-box input {
+    padding: 0.7rem 1rem 0.7rem 2.5rem;
+    font-size: 0.85rem;
+  }
+
+  /* ===== PANTRY MOBILE FIX ===== */
+  .pantry-section {
+    padding: 1rem;
+  }
+
+  .pantry-title {
+    font-size: 1.1rem;
+  }
+
+  .pantry-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  /* ===== HERO BUTTONS STACK ===== */
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
   }
 }
 
@@ -1825,6 +2071,20 @@ body::before {
 @keyframes toast-out {
   from { transform: translateY(0); opacity: 1; }
   to { transform: translateY(100px); opacity: 0; }
+
+
+  /* ===== PAGE LOADER MOBILE FIX ===== */
+  .page-loader {
+    padding: 1rem;
+  }
+
+  .loader-icon {
+    font-size: 3rem;
+  }
+
+  .loader-text {
+    font-size: 1.2rem;
+  }
 }
 
 /* ===== PRINT STYLES ===== */
