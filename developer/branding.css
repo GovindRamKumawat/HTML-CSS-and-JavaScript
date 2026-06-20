@@ -1,0 +1,70 @@
+/* ============================================
+   DEVELOPER PROFILE & BRANDING
+   𝐆𝐨𝐯𝐢𝐧𝐝 𝐑𝐚𝐦 | Ꭾɪᴋᴀᴄʜᴜ
+   VortexTechWarp.com
+   ============================================ */
+
+:root {
+  --dev-primary: #FF6B6B;
+  --dev-secondary: #4ECDC4;
+  --dev-accent: #FFE66D;
+  --dev-dark: #2D3436;
+  --dev-light: #F7F9FC;
+}
+
+.dev-branding {
+  font-family: 'Poppins', sans-serif;
+}
+
+.dev-name {
+  font-weight: 800;
+  background: linear-gradient(135deg, #FF6B6B, #4ECDC4, #FFE66D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dev-alias {
+  font-family: 'Courier New', monospace;
+  letter-spacing: 2px;
+  color: var(--dev-secondary);
+}
+
+.dev-social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.dev-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--gradient-1);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.dev-social a:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 20px rgba(255,107,107,0.4);
+}
+
+.dev-copyright {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--dev-dark);
+  color: white;
+  font-size: 0.9rem;
+}
+
+.dev-copyright a {
+  color: var(--dev-accent);
+  text-decoration: none;
+  font-weight: 600;
+}

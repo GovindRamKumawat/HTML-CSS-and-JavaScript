@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desi-Vedeshi Cuisine | Explore 55+ World Recipes</title>
+  <meta name="description" content="Discover 55+ vegetarian recipes from around the world. From Indian curries to Italian pasta, Asian stir-fries to American classics - your global culinary journey starts here!">
+  <meta name="keywords" content="recipes, vegetarian, world cuisine, Indian, Italian, Asian, Mexican, Mediterranean, American, African, Middle Eastern, desserts">
+  <meta name="author" content="Govind Ram">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="developer/branding.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-icon">🍽️</div>
+    <div class="loader-text">Loading Deliciousness...</div>
+  </div>
+
+  <!-- Floating Sticker Elements -->
+  <div class="sticker-float" style="top:10%; left:5%; animation-delay:0s;">🍕</div>
+  <div class="sticker-float" style="top:20%; right:8%; animation-delay:1s;">🍜</div>
+  <div class="sticker-float" style="top:40%; left:3%; animation-delay:2s;">🌮</div>
+  <div class="sticker-float" style="top:60%; right:5%; animation-delay:0.5s;">🍣</div>
+  <div class="sticker-float" style="top:80%; left:7%; animation-delay:1.5s;">🥘</div>
+  <div class="sticker-float" style="top:15%; right:15%; animation-delay:3s;">🍰</div>
+  <div class="sticker-float" style="top:50%; left:10%; animation-delay:2.5s;">🍛</div>
+  <div class="sticker-float" style="top:75%; right:12%; animation-delay:1s;">🥗</div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo"><span>🍽️</span> Desi-Vedeshi</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#pantry">Pantry</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-floaters">
+      <div class="hero-floater" style="top:15%; left:10%;">🍕</div>
+      <div class="hero-floater" style="top:25%; right:15%; animation-delay:1s;">🍜</div>
+      <div class="hero-floater" style="top:45%; left:5%; animation-delay:2s;">🌮</div>
+      <div class="hero-floater" style="top:55%; right:8%; animation-delay:0.5s;">🍣</div>
+      <div class="hero-floater" style="top:75%; left:15%; animation-delay:1.5s;">🥘</div>
+      <div class="hero-floater" style="top:85%; right:20%; animation-delay:3s;">🍰</div>
+      <div class="hero-floater" style="top:35%; left:20%; animation-delay:2.5s;">🍛</div>
+      <div class="hero-floater" style="top:65%; right:25%; animation-delay:1s;">🥗</div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-badge">🌍 55+ Global Vegetarian Recipes</span>
+      <h1>Taste the World on Your Plate</h1>
+      <p class="hero-subtitle">From the spices of India to the pasta of Italy, the sushi of Japan to the tacos of Mexico — discover authentic vegetarian recipes from every corner of the globe. Your culinary adventure starts here!</p>
+      <div class="hero-buttons">
+        <a href="#recipes" class="btn btn-primary">🍳 Explore Recipes</a>
+        <a href="#pantry" class="btn btn-secondary">🥘 What's in Your Pantry?</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-number">55+</div>
+      <div class="stat-label">Global Recipes</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">9</div>
+      <div class="stat-label">Cuisines</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">30+</div>
+      <div class="stat-label">Countries</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">Vegetarian</div>
+    </div>
+  </div>
+
+  <!-- Categories Showcase -->
+  <section class="section" id="categories">
+    <div class="section-header">
+      <span class="section-tag">🗂️ Categories</span>
+      <h2 class="section-title">Explore by Cuisine</h2>
+      <p class="section-subtitle">Dive into different culinary traditions from around the world. Each cuisine tells a unique story through its flavors.</p>
+    </div>
+    <div class="categories-showcase">
+      <div class="category-card" data-category="indian">
+        <span class="category-icon">🍛</span>
+        <h3 class="category-name">Indian</h3>
+        <p class="category-count">8 Recipes</p>
+      </div>
+      <div class="category-card" data-category="italian">
+        <span class="category-icon">🍝</span>
+        <h3 class="category-name">Italian</h3>
+        <p class="category-count">5 Recipes</p>
+      </div>
+      <div class="category-card" data-category="asian">
+        <span class="category-icon">🍜</span>
+        <h3 class="category-name">Asian</h3>
+        <p class="category-count">10 Recipes</p>
+      </div>
+      <div class="category-card" data-category="mexican">
+        <span class="category-icon">🌮</span>
+        <h3 class="category-name">Mexican</h3>
+        <p class="category-count">5 Recipes</p>
+      </div>
+      <div class="category-card" data-category="mediterranean">
+        <span class="category-icon">🥙</span>
+        <h3 class="category-name">Mediterranean</h3>
+        <p class="category-count">6 Recipes</p>
+      </div>
+      <div class="category-card" data-category="american">
+        <span class="category-icon">🍔</span>
+        <h3 class="category-name">American</h3>
+        <p class="category-count">5 Recipes</p>
+      </div>
+      <div class="category-card" data-category="african">
+        <span class="category-icon">🍲</span>
+        <h3 class="category-name">African</h3>
+        <p class="category-count">3 Recipes</p>
+      </div>
+      <div class="category-card" data-category="middle-eastern">
+        <span class="category-icon">🧆</span>
+        <h3 class="category-name">Middle Eastern</h3>
+        <p class="category-count">3 Recipes</p>
+      </div>
+      <div class="category-card" data-category="desserts">
+        <span class="category-icon">🍰</span>
+        <h3 class="category-name">Desserts</h3>
+        <p class="category-count">10 Recipes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pantry Filter Section -->
+  <section class="section" id="pantry">
+    <div class="section-header">
+      <span class="section-tag">🥘 Pantry Filter</span>
+      <h2 class="section-title">What's in Your Kitchen?</h2>
+      <p class="section-subtitle">Select ingredients you have at home, and we'll show you recipes you can make right now!</p>
+    </div>
+    <div class="pantry-section">
+      <h3 class="pantry-title">🧺 Click on items you have:</h3>
+      <div class="pantry-items" id="pantryItems">
+        <!-- Pantry items rendered by JS -->
+      </div>
+      <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; flex-wrap: wrap;">
+        <button class="pantry-btn" onclick="findRecipesByPantry()">🔍 Find Recipes</button>
+        <button class="pantry-btn" style="background: var(--gradient-4);" onclick="clearPantry()">🔄 Clear All</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recipes Section -->
+  <section class="section" id="recipes">
+    <div class="section-header">
+      <span class="section-tag">📖 All Recipes</span>
+      <h2 class="section-title">Discover Your Next Favorite Dish</h2>
+      <p class="section-subtitle">Browse through our collection of 55+ carefully curated vegetarian recipes from around the world. Click on any card to see full details!</p>
+    </div>
+
+    <!-- Search & Filter -->
+    <div class="search-filter-container">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search recipes, ingredients, or countries...">
+      </div>
+      <div class="filter-tags">
+        <button class="filter-tag active" data-category="all">🌍 All</button>
+        <button class="filter-tag" data-category="indian">🍛 Indian</button>
+        <button class="filter-tag" data-category="italian">🍝 Italian</button>
+        <button class="filter-tag" data-category="asian">🍜 Asian</button>
+        <button class="filter-tag" data-category="mexican">🌮 Mexican</button>
+        <button class="filter-tag" data-category="mediterranean">🥙 Mediterranean</button>
+        <button class="filter-tag" data-category="desserts">🍰 Desserts</button>
+        <button class="filter-tag" data-category="american">🍔 American</button>
+        <button class="filter-tag" data-category="african">🍲 African</button>
+        <button class="filter-tag" data-category="middle-eastern">🧆 Middle Eastern</button>
+      </div>
+    </div>
+
+    <!-- Recipes Grid -->
+    <div class="recipes-grid" id="recipesGrid">
+      <!-- Recipes will be dynamically loaded here -->
+    </div>
+  </section>
+
+  <!-- Featured Recipes Marquee -->
+  <section class="section" id="featured">
+    <div class="section-header">
+      <span class="section-tag">⭐ Featured</span>
+      <h2 class="section-title">Trending Dishes</h2>
+      <p class="section-subtitle">These are the most loved recipes by our community. Don't miss out!</p>
+    </div>
+    <div class="marquee-container">
+      <div class="marquee-track">
+        <div class="marquee-item">
+          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400" alt="Paneer Tikka">
+          <div class="marquee-item-info">
+            <div class="marquee-item-title">Paneer Tikka Masala</div>
+            <div class="marquee-item-origin">🇮🇳 India</div>
+          </div>
+        </div>
+        <div class="marquee-item">
+          <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400" alt="Pizza">
+          <div class="marquee-item-info">
+            <div class="marquee-item-title">Margherita Pizza</div>
+            <div class="marquee-item-origin">🇮🇹 Italy</div>
+          </div>
+        </div>
+        <div class="marquee-item">
+          <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=400" alt="Sushi">
+          <div class="marquee-item-info">
+            <div class="marquee-item-title">Vegetable Sushi</div>
+            <div class="marquee-item-origin">🇯🇵 Japan</div>
+          </div>
+        </div>
+        <div class="marquee-item">
+          <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=400" alt="Tacos">
+          <div class="marquee-item-info">
+            <div class="marquee-item-title">Vegetable Tacos</div>
+            <div class="marquee-item-origin">🇲🇽 Mexico</div>
+          </div>
+        </div>
+        <div class="marquee-item">
+          <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=400" alt="Moussaka">
+          <div class="marquee-item-info">
+            <div class="marquee-item-title">Greek Moussaka</div>
+            <div class="marquee-item-origin">🇬🇷 Greece</div>
+          </div>
+        </div>
+        <div class="marquee-item">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400" alt="Burger">
+          <div class="marquee-item-info">
+            <div class="marquee-item-title">Vegetable Burger</div>
+            <div class="marquee-item-origin">🇺🇸 USA</div>
+          </div>
+        </div>
+        <div class="marquee-item">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400" alt="Gulab Jamun">
+          <div class="marquee-item-info">
+            <div class="marquee-item-title">Gulab Jamun</div>
+            <div class="marquee-item-origin">🇮🇳 India</div>
+          </div>
+        </div>
+        <div class="marquee-item">
+          <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400" alt="Tiramisu">
+          <div class="marquee-item-info">
+            <div class="marquee-item-title">Tiramisu</div>
+            <div class="marquee-item-origin">🇮🇹 Italy</div>
+          </div>
+        </div>
+        <div class="marquee-item">
+          <img src="https://images.unsplash.com/photo-1559314809-0d155014e29e?w=400" alt="Pad Thai">
+          <div class="marquee-item-info">
+            <div class="marquee-item-title">Pad Thai</div>
+            <div class="marquee-item-origin">🇹🇭 Thailand</div>
+          </div>
+        </div>
+        <div class="marquee-item">
+          <img src="https://images.unsplash.com/photo-1637949385162-e416fb15b2ce?w=400" alt="Hummus">
+          <div class="marquee-item-info">
+            <div class="marquee-item-title">Hummus</div>
+            <div class="marquee-item-origin">🇱🇧 Lebanon</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feedback Section -->
+  <section class="section" id="feedback">
+    <div class="section-header">
+      <span class="section-tag">💬 Feedback</span>
+      <h2 class="section-title">We'd Love to Hear From You!</h2>
+      <p class="section-subtitle">Share your thoughts, suggestions, or favorite recipes. Your feedback helps us improve!</p>
+    </div>
+    <div class="feedback-section">
+      <form class="feedback-form" id="feedbackForm">
+        <div class="form-group">
+          <label for="feedbackName">Your Name *</label>
+          <input type="text" id="feedbackName" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="feedbackEmail">Email Address *</label>
+          <input type="email" id="feedbackEmail" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label>Rating</label>
+          <div class="rating-stars">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+          </div>
+          <input type="hidden" id="feedbackRating" value="0">
+        </div>
+        <div class="form-group">
+          <label for="feedbackMessage">Your Message *</label>
+          <textarea id="feedbackMessage" placeholder="Tell us what you think about our recipes, website, or suggest new features..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">📤 Send Feedback</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about" style="background: white; border-radius: 30px; padding: 4rem 3rem; margin: 3rem auto; max-width: 1000px; box-shadow: var(--shadow-soft);">
+    <div class="section-header">
+      <span class="section-tag">❤️ About Us</span>
+      <h2 class="section-title">Connecting Cultures Through Food</h2>
+    </div>
+    <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <p style="font-size: 1.1rem; color: #636e72; line-height: 1.8; margin-bottom: 2rem;">
+        <strong>Desi-Vedeshi Cuisine</strong> (where "Desi" means local/native and "Vedeshi" means foreign/international) is your passport to the world's most delicious vegetarian recipes. We believe that food is the universal language that connects people across borders, cultures, and traditions.
+      </p>
+      <p style="font-size: 1.1rem; color: #636e72; line-height: 1.8; margin-bottom: 2rem;">
+        Our collection features <strong>55+ authentic vegetarian recipes</strong> from over <strong>30 countries</strong>, spanning 9 major cuisine categories. Each recipe comes with detailed ingredients, step-by-step instructions, origin information, cooking time, and difficulty level — everything you need to bring world flavors to your kitchen!
+      </p>
+      <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 2rem;">
+        <div style="text-align: center;">
+          <div style="font-size: 2.5rem;">🌿</div>
+          <div style="font-weight: 700; margin-top: 0.5rem;">100% Vegetarian</div>
+          <div style="color: #636e72; font-size: 0.9rem;">All recipes are meat-free</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 2.5rem;">🌶️</div>
+          <div style="font-weight: 700; margin-top: 0.5rem;">Authentic</div>
+          <div style="color: #636e72; font-size: 0.9rem;">Traditional recipes</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 2.5rem;">📸</div>
+          <div style="font-weight: 700; margin-top: 0.5rem;">Visual</div>
+          <div style="color: #636e72; font-size: 0.9rem;">Beautiful food images</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 2.5rem;">📋</div>
+          <div style="font-weight: 700; margin-top: 0.5rem;">Detailed</div>
+          <div style="color: #636e72; font-size: 0.9rem;">Step-by-step guides</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 2.5rem;">🔍</div>
+          <div style="font-weight: 700; margin-top: 0.5rem;">Searchable</div>
+          <div style="color: #636e72; font-size: 0.9rem;">Easy to find recipes</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 2.5rem;">🥘</div>
+          <div style="font-weight: 700; margin-top: 0.5rem;">Pantry Filter</div>
+          <div style="color: #636e72; font-size: 0.9rem;">Cook with what you have</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <div class="footer-brand">🍽️ Desi-Vedeshi</div>
+        <p class="footer-desc">Your global culinary companion. Explore, cook, and savor the flavors of the world from the comfort of your kitchen. All recipes are 100% vegetarian!</p>
+      </div>
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#recipes">All Recipes</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#pantry">Pantry Filter</a></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Cuisines</h4>
+        <ul class="footer-links">
+          <li><a href="#" onclick="return filterByCategory('indian')">Indian</a></li>
+          <li><a href="#" onclick="return filterByCategory('italian')">Italian</a></li>
+          <li><a href="#" onclick="return filterByCategory('asian')">Asian</a></li>
+          <li><a href="#" onclick="return filterByCategory('mexican')">Mexican</a></li>
+          <li><a href="#" onclick="return filterByCategory('desserts')">Desserts</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Connect</h4>
+        <ul class="footer-links">
+          <li><a href="https://www.instagram.com/_._govind_ram_._" target="_blank">Instagram</a></li>
+          <li><a href="https://VortexTechWarp.com" target="_blank">Portfolio</a></li>
+          <li><a href="#feedback">Contact Us</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Developer Credit Section -->
+    <div class="footer-bottom">
+      <div class="dev-credit">
+        <p>🍽️ Desi-Vedeshi Cuisine &copy; 2024 | Made with ❤️ and lots of spices!</p>
+        <p style="margin-top: 0.5rem;">
+          Developed by <strong style="color: var(--accent);">𝐆𝐨𝐯𝐢𝐧𝐝 𝐑𝐚𝐦</strong> | Alias: <strong style="color: var(--secondary);">Ꭾɪᴋᴀᴄʜᴜ</strong>
+        </p>
+        <p style="margin-top: 0.5rem;">
+          <a href="https://VortexTechWarp.com" target="_blank">🌐 VortexTechWarp.com</a> | 
+          <a href="https://www.instagram.com/_._govind_ram_._" target="_blank">📸 Instagram</a>
+        </p>
+        <div class="dev-social-links">
+          <a href="https://VortexTechWarp.com" target="_blank" title="Portfolio">🌐</a>
+          <a href="https://www.instagram.com/_._govind_ram_._" target="_blank" title="Instagram">📸</a>
+          <a href="mailto:contact@vortextechwarp.com" title="Email">📧</a>
+          <a href="https://github.com" target="_blank" title="GitHub">💻</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Recipe Detail Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content" id="modalContent">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <!-- Modal content will be dynamically loaded -->
+    </div>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" id="scrollTop">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
